@@ -7,10 +7,10 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { CheckboxModule } from 'primeng/checkbox';
 import { Button } from '../../../../shared/components/button/button';
-
+import { AuthLayout } from '../../../../shared/layouts/auth-layout/auth-layout';
 @Component({
   selector: 'app-login',
-  imports: [  InputComponent  , Button  , CheckboxModule],
+  imports: [  InputComponent  , Button  , CheckboxModule , AuthLayout],
   templateUrl: './login.html',
   styleUrl: './login.css',
 })
