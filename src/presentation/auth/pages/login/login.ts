@@ -1,4 +1,3 @@
-import { InputComponent } from './../../../../shared/components/input-component/input-component';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -8,6 +7,8 @@ import { PasswordModule } from 'primeng/password';
 import { CheckboxModule } from 'primeng/checkbox';
 import { Button } from '../../../../shared/components/button/button';
 import { AuthLayout } from '../../../../shared/layouts/auth-layout/auth-layout';
+import { InputComponent } from './../../../../shared/components/input-component/input-component';
+
 @Component({
   selector: 'app-login',
   imports: [  InputComponent  , Button  , CheckboxModule , AuthLayout],
