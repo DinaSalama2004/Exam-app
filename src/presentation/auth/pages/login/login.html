@@ -1,18 +1,107 @@
+<div class="min-h-screen flex flex-col md:flex-row">
 
-<app-input-component
-  label="Username"
-  placeholder="user123"
-  type="text">
-</app-input-component>
+  <!-- Left Side -->
+  <div
+    class="w-full md:w-1/2 bg-gradient-to-br from-[#F8FBFF] via-[#EFF6FF] to-[#DCEEFF] flex items-center justify-center py-10 px-6">
 
-<app-input-component
-  label="Password"
-  placeholder="********"
-  type="password">
-</app-input-component>
+    <div class="max-w-lg w-full">
 
+      <!-- Logo -->
+      <img
+        src="images/Logo.png"
+        alt="Exam App Logo"
+        class="h-10 mb-10">
 
-<app-button
+      <!-- Heading -->
+      <h1 class="text-3xl md:text-5xl font-bold leading-tight text-gray-800 mb-10">
+        Empower your learning journey with our smart exam platform.
+      </h1>
 
-    label="Login">
-</app-button>
+      <!-- Features -->
+      <div class="space-y-8">
+
+        <div class="flex gap-4">
+          <img src="images/Icon1.png" class="w-10 h-10">
+          <div>
+            <h3 class="text-blue-600 font-semibold text-lg">Tailored Diplomas</h3>
+            <p class="text-gray-600 mt-2">
+              Choose from specialized tracks like Frontend, Backend, and Mobile Development.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <img src="images/book-open-check.png" class="w-10 h-10">
+          <div>
+            <h3 class="text-blue-600 font-semibold text-lg">Focused Exams</h3>
+            <p class="text-gray-600 mt-2">
+              Access topic-specific tests including HTML, CSS, JavaScript and more.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <img src="images/Icon (2).png" class="w-10 h-10">
+          <div>
+            <h3 class="text-blue-600 font-semibold text-lg">Smart Multi-Step Forms</h3>
+            <p class="text-gray-600 mt-2">
+              Complete forms quickly with a guided multi-step experience.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Right Side -->
+  <div class="w-full md:w-1/2 flex items-center justify-center bg-white py-10 px-6">
+
+    <div class="w-full max-w-md">
+
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+        Login
+      </h1>
+
+      <app-input-component
+        label="Username"
+        placeholder="Enter your username"
+        type="text">
+      </app-input-component>
+
+      <div class="h-5"></div>
+
+      <app-input-component
+        label="Password"
+        placeholder="Enter your password"
+        type="password">
+      </app-input-component>
+
+      <div class="flex justify-end mt-3">
+        <a
+          routerLink="/forgot-password"
+          class="text-blue-600 text-sm hover:underline">
+          Forgot your password?
+        </a>
+      </div>
+
+      <div class="mt-8">
+        <app-button label="Login"></app-button>
+      </div>
+
+      <p class="text-center mt-8 text-gray-500">
+        Don't have an account?
+        <a
+          routerLink="/register"
+          class="text-blue-600 font-semibold">
+          Create yours
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+
+</div>

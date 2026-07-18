@@ -10,7 +10,7 @@ import { Button } from '../../../../shared/components/button/button';
 
 @Component({
   selector: 'app-login',
-  imports: [  InputComponent  , Button  ],
+  imports: [  InputComponent  , Button  , CheckboxModule],
   templateUrl: './login.html',
   styleUrl: './login.css',
 })
