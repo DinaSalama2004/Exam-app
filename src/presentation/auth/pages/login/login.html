@@ -1,18 +1,52 @@
 
-<app-input-component
-  label="Username"
-  placeholder="user123"
-  type="text">
-</app-input-component>
 
-<app-input-component
-  label="Password"
-  placeholder="********"
-  type="password">
-</app-input-component>
+<app-auth-layout>
 
+  
+  <!-- Right Side -->
 
-<app-button
+    <div class="w-full max-w-md">
 
-    label="Login">
-</app-button>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+        Login
+      </h1>
+
+      <app-input-component
+        label="Username"
+        placeholder="Enter your username"
+        type="text">
+      </app-input-component>
+
+      <div class="h-5"></div>
+
+      <app-input-component
+        label="Password"
+        placeholder="Enter your password"
+        type="password">
+      </app-input-component>
+
+      <div class="flex justify-end mt-3">
+        <a
+          routerLink="/forgot-password"
+          class="text-blue-600 text-sm hover:underline">
+          Forgot your password?
+        </a>
+      </div>
+
+      <div class="mt-8">
+        <app-button label="Login"></app-button>
+      </div>
+
+      <p class="text-center mt-8 text-gray-500">
+        Don't have an account?
+        <a
+          routerLink="/register"
+          class="text-blue-600 font-semibold">
+          Create yours
+        </a>
+      </p>
+
+    </div>
+
+  
+</app-auth-layout>
