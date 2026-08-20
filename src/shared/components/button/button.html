@@ -4,5 +4,14 @@
     [type]="type"
     [loading]="loading"
     [disabled]="disabled"
-    styleClass="w-100 my-2">
+     [styleClass]="
+    'w-100 my-2 btn-square' +
+      (variant === 'gray' ? ' btn-gray' : '')
+      
+    "
+
+    [outlined]="variant === 'outline'"
+
+   >
 </p-button>
+
