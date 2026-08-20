@@ -26,4 +26,7 @@ export class Button {
   @Input() loading = false;
 
   @Input() disabled = false;
+
+@Input() variant: 'default' | 'outline' | 'gray' = 'default';
+
 }

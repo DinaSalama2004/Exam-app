@@ -12,11 +12,14 @@ export class InputComponent {
 
 
 
-   @Input() label = '';
+  @Input() label = '';
 
   @Input() placeholder = '';
 
   @Input() type = 'text';
 
   @Input() value = '';
+
+  @Input() correct: boolean | null = null ;
 }
+

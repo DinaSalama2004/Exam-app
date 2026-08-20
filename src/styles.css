@@ -1,3 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+
+
+.btn-square {
+  border-radius: 0 !important;
+}
+
+.input-primary {
+  border-color: #155DFC !important;
+}
+
+.input-correct {
+  border-color: #22c55e !important;
+}
+
+.input-wrong {
+  border-color: #ef4444 !important;
+}
+
+.btn-gray {
+  background-color: #E5E7EB !important;
+  border-color: #E5E7EB !important;
+  color: darkgrey !important;
+}
+
+.btn-gray:hover {
+  background-color: #D1D5DB !important;
+  border-color: #D1D5DB !important;
+}
