@@ -1,17 +1,14 @@
 <p-button
-    [label]="label"
-    [severity]="severity"
-    [type]="type"
-    [loading]="loading"
-    [disabled]="disabled"
-     [styleClass]="
-    'w-100 my-2 btn-square' +
-      (variant === 'gray' ? ' btn-gray' : '')
-      
-    "
-
-    [outlined]="variant === 'outline'"
-
-   >
+  [label]="label"
+  [severity]="severity"
+  [type]="type"
+  [loading]="loading"
+  [disabled]="disabled"
+  [styleClass]="
+    'w-100 my-2 btn-square ' +
+    (variant === 'gray' ? 'btn-gray ' : '') +
+    (variant === 'outline' ? 'btn-outline' : '')
+  "
+  [outlined]="variant === 'outline'"
+>
 </p-button>
-

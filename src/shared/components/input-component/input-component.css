@@ -1,3 +1,46 @@
+:host {
+  display: block;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.field-label {
+  color: #374151;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
 .field-input {
-  border-radius: 0 !important;
+  width: 100%;
+  border-radius: 12px !important;
+  border: 1px solid #dfe8f4 !important;
+  background: #ffffff;
+  padding: 0.88rem 1rem;
+  color: #111827;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field-input::placeholder {
+  color: #94a3b8;
+}
+
+.field-input:focus {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12) !important;
+}
+
+.field-input.input-primary {
+  border-color: #bfdbfe !important;
+}
+
+.field-input.input-correct {
+  border-color: #16a34a !important;
+}
+
+.field-input.input-wrong {
+  border-color: #ef4444 !important;
 }

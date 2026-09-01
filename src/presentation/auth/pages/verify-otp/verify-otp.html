@@ -1,0 +1,81 @@
+<app-auth-layout>
+  <div class="w-full max-w-md">
+
+    <!-- <button class="mb-6 text-gray-600 hover:text-gray-800">
+        ←
+    </button> -->
+
+
+
+        <!-- Progress Bar -->
+    <div class="flex items-center w-full max-w-md mx-auto mb-8">
+
+  <!-- Step 1 -->
+  <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+
+  <!-- Line -->
+  <div class="flex-1 h-px bg-blue-500"></div>
+
+  <!-- Step 2 -->
+  <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+
+  <!-- Line -->
+  <div class="flex-1 h-px bg-blue-300"></div>
+
+  <!-- Step 3 -->
+  <div class="w-2 h-2 rounded-full border border-blue-400 bg-white"></div>
+
+  <!-- Line -->
+  <div class="flex-1 h-px border-t border-dashed border-blue-300"></div>
+
+  <!-- Step 4 -->
+  <div class="w-2 h-2 rounded-full border border-blue-400 bg-white"></div>
+
+</div>
+    <h1 class="text-3xl font-bold text-blue  ">
+      Verify OTP
+    </h1>
+
+    <p class="text-sm text-gray-500 mt-2 mb-6">
+      Please enter the 6-digiA
+code we have sent to:<br>
+
+<span class="text-black font-medium">user@example.com</span>
+
+<a routerLink="/create-account" class=" text-blue  font-semibold cursor-pointer">
+          Edit
+        </a>
+
+    </p>
+
+    <div class="space-y-4">
+      <div class="flex gap-2 justify-center">
+        <input type="text" class="focus:border-blue-500 focus:outline-none w-12 h-12 border border-gray-300 rounded text-center text-xl font-semibold" maxlength="1">
+        <input type="text" class="focus:border-blue-500 focus:outline-none w-12 h-12 border border-gray-300 rounded text-center text-xl font-semibold" maxlength="1">
+        <input type="text" class="focus:border-blue-500 focus:outline-none w-12 h-12 border border-gray-300 rounded text-center text-xl font-semibold" maxlength="1">
+        <input type="text" class="focus:border-blue-500 focus:outline-none w-12 h-12 border border-gray-300 rounded text-center text-xl font-semibold" maxlength="1">
+        <input type="text" class="focus:border-blue-500 focus:outline-none w-12 h-12 border border-gray-300 rounded text-center text-xl font-semibold" maxlength="1">
+        <input type="text" class="focus:border-blue-500 focus:outline-none w-12 h-12 border border-gray-300 rounded text-center text-xl font-semibold" maxlength="1">
+      </div>
+
+
+
+      
+
+  <app-button
+    label="Verify Code"
+    variant="outline"
+    (click)="next()">
+  </app-button>
+
+
+      <p class="text-center text-sm text-gray-500">
+        Didn't receive OTP?
+        <a routerLink="/verify-otp" class=" text-blue  font-semibold cursor-pointer">
+          Resend
+        </a>
+      </p>
+    </div>
+
+  </div>
+</app-auth-layout>

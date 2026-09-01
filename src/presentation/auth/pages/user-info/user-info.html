@@ -1,0 +1,84 @@
+<app-auth-layout>
+  <div class="w-full max-w-md">
+
+
+
+            <!-- Progress Bar -->
+    <div class="flex items-center w-full max-w-md mx-auto mb-8">
+
+  <!-- Step 1 -->
+  <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+
+  <!-- Line -->
+  <div class="flex-1 h-px bg-blue-500"></div>
+
+  <!-- Step 2 -->
+  <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+
+  <!-- Line -->
+  <div class="flex-1 h-px bg-blue-300"></div>
+
+  <!-- Step 3 -->
+  <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+
+  <!-- Line -->
+  <div class="flex-1 h-px border-t border-dashed border-blue-300"></div>
+
+  <!-- Step 4 -->
+  <div class="w-2 h-2 rounded-full border border-blue-400 bg-white"></div>
+
+</div>
+   
+
+    <h1 class="text-3xl font-bold text-gray-800">
+      Create Account
+    </h1>
+
+    <p class="text-lg font-bold  text-blue   500 mt-2 mb-6">
+      Tell us more about you
+    </p>
+
+    <div class="space-y-4 ">
+
+      <div class=" flex gap-2">
+
+        <app-input-component
+        label="First Name"
+        placeholder=" Ahmed">
+      </app-input-component>
+
+
+
+            <app-input-component
+        label="Last Name"
+        placeholder="Abdullah">
+      </app-input-component>
+
+
+
+      </div>
+    
+           <app-input-component
+        label="username"
+        placeholder="user123">
+      </app-input-component>
+
+      <app-input-component
+        label="Phone Number"
+        placeholder="Enter phone number">
+      </app-input-component>
+
+
+
+  <app-button
+    label="Next >"
+    variant="outline"
+    (click)="next()">
+  </app-button>                                                                                                                                                             
+
+
+    
+    </div>
+
+  </div>
+</app-auth-layout>

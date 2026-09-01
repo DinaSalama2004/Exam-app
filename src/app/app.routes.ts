@@ -4,6 +4,10 @@ import { CreateAccount } from '../presentation/auth/pages/create-account/create-
 import { ForgotPassword } from '../presentation/auth/pages/forgot-password/forgot-password';
 import { CreateNewPassword } from '../presentation/auth/pages/create-new-password/create-new-password';
 import { PasswordReset } from '../presentation/auth/pages/password-reset/password-reset';
+import { VerifyEmail } from '../presentation/auth/pages/verify-email/verify-email';
+import { UserInfo } from '../presentation/auth/pages/user-info/user-info';
+import { Password } from '../presentation/auth/pages/password/password';
+import { VerifyOtp } from '../presentation/auth/pages/verify-otp/verify-otp';
 
 
 export const routes: Routes = [
@@ -18,10 +22,29 @@ export const routes: Routes = [
     component: Login
   },
 
-
   {
     path: 'create-account',
     component: CreateAccount
+  },
+
+  {
+    path: 'verify-email',
+    component: VerifyEmail
+  },
+
+  {
+    path: 'user-info',
+    component: UserInfo
+  },
+
+  {
+    path: 'password',
+    component: Password
+  },
+
+  {
+    path: 'verify-otp',
+    component: VerifyOtp
   },
 
   {

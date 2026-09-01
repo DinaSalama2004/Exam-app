@@ -1,0 +1,59 @@
+<app-auth-layout>
+  <div class="w-full max-w-md">
+
+    <!-- Progress Bar -->
+    <div class="flex items-center w-full max-w-md mx-auto mb-8">
+
+  <!-- Step 1 -->
+  <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+
+  <!-- Line -->
+  <div class="flex-1 h-px bg-blue-500"></div>
+
+  <!-- Step 2 -->
+  <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+
+  <!-- Line -->
+  <div class="flex-1 h-px bg-blue-300"></div>
+
+  <!-- Step 3 -->
+  <div class="w-2 h-2 rounded-full border border-blue-400 bg-white"></div>
+
+  <!-- Line -->
+  <div class="flex-1 h-px border-t border-dashed border-blue-300"></div>
+
+  <!-- Step 4 -->
+  <div class="w-2 h-2 rounded-full border border-blue-400 bg-white"></div>
+
+</div>
+
+    <h1 class="text-3xl font-bold text-gray-800">
+      Verify Email
+    </h1>
+
+    <p class="text-sm text-gray-500 mt-2 mb-6">
+      Enter the verification code sent to your email
+    </p>
+
+    <div class="space-y-4">
+      <div class="flex gap-2 justify-center">
+        <input type="text" class="w-12 h-12 border border-gray-300 rounded text-center text-xl font-semibold" maxlength="1">
+        <input type="text" class="w-12 h-12 border border-gray-300 rounded text-center text-xl font-semibold" maxlength="1">
+        <input type="text" class="w-12 h-12 border border-gray-300 rounded text-center text-xl font-semibold" maxlength="1">
+        <input type="text" class="w-12 h-12 border border-gray-300 rounded text-center text-xl font-semibold" maxlength="1">
+        <input type="text" class="w-12 h-12 border border-gray-300 rounded text-center text-xl font-semibold" maxlength="1">
+        <input type="text" class="w-12 h-12 border border-gray-300 rounded text-center text-xl font-semibold" maxlength="1">
+      </div>
+
+      <app-button label="Continue"></app-button>
+
+      <p class="text-center text-sm text-gray-500">
+        Didn't receive code?
+        <a routerLink="/verify-email" class=" text-blue  font-semibold cursor-pointer">
+          Resend
+        </a>
+      </p>
+    </div>
+
+  </div>
+</app-auth-layout>
