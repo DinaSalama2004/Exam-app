@@ -16,7 +16,7 @@ export class VerifyOtp {
 
 
     constructor(private router: Router) {}
-
+code = ['1', '2', '3', '4', '5', '6'];
   next(){
     this.router.navigate(['/user-info']);
   }
